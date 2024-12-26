@@ -1,0 +1,143 @@
+@import "./ant-overrides/form.less";
+@import "./ant-overrides/notification.less";
+@import "./ant-overrides/tabs.less";
+@import "./ant-overrides/menu.less";
+@import "./ant-overrides/table.less";
+@import "./ant-overrides/modal.less";
+@import "./ant-overrides/collapse.less";
+@import "./ant-overrides/button.less";
+@import "./custom/actions.less";
+@import "./custom/containers.less";
+@import "./custom/headings.less";
+@import "./custom/layout.less";
+@import "./custom/modal.less";
+@import "./custom/table.less";
+@import "./custom/scroll.less";
+@import "./custom/texts.less";
+
+.page-container {
+	padding: 16px;
+	padding-top: 38px;
+}
+
+.table-actions,
+.component-actions {
+	display: flex;
+	gap: 8px;
+}
+
+.component-actions {
+	justify-content: flex-end;
+}
+
+.empty-row {
+	padding: 16px 16px !important;
+}
+
+.table-actions {
+	justify-content: flex-start;
+	padding-left: 16px;
+}
+
+.w-50-p {
+	width: 50% !important;
+}
+
+.w-100-p {
+	width: 100% !important;
+}
+
+.minh-200 {
+	min-height: 200px;
+}
+
+.minh-400 {
+	min-height: 400px;
+}
+
+.pos-r {
+	position: relative !important;
+}
+
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+th {
+	user-select: none;
+}
+
+.compliance-link {
+	margin: 16px 16px 25px 16px;
+}
+
+.sql-query-custom-tooltip {
+	max-width: 520px;
+
+	.ant-tooltip-inner {
+		color: black;
+		padding: 25px;
+
+		code {
+			background: #d9d9d9;
+			display: block;
+			padding: 4px 8px;
+			border-radius: 6px;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+}
+
+.entity-label {
+	font-weight: 600;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.document-date {
+	.ant-picker-input>input[disabled] {
+		background: transparent;
+		color: black;
+	}
+
+	.ant-picker-suffix {
+		display: none;
+	}
+
+}
+
+.session-expire {
+	position: fixed;
+	top: 0;
+	background-color: #f89522;
+	padding: 5px;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__icon {
+		color: #fff;
+		position: absolute;
+		right: 20px;
+		font-size: 20px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	h4 {
+		align-items: center;
+		margin-bottom: 0em;
+		color: #fff;
+	}
+}

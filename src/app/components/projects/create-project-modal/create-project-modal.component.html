@@ -1,0 +1,15 @@
+<div class="section-container">
+  <form nz-form [formGroup]="form" [nzLayout]="'vertical'">
+    <nz-form-item>
+      <nz-form-label nzRequired>Project Name</nz-form-label>
+      <nz-form-control nzErrorTip="Name is required.">
+        <input nz-input name="city" formControlName="name" placeholder="Enter Project Name" />
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+</div>
+
+<div *nzModalFooter>
+  <button nz-button (click)="cancel()">Cancel</button>
+  <button nz-button nzType="primary" type="submit"> Save</button>
+</div>

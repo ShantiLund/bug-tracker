@@ -1,0 +1,52 @@
+.std-table {
+	th {
+		text-align: left;
+	}
+}
+
+.form-table-add-row {
+	text-align: center;
+}
+
+.type-field-error {
+	position: relative;
+	&::after {
+		position: absolute;
+		content: '*';
+		color: #dc3545;
+		font-size: 16px;
+		width: 16px;
+		height: 16px;
+		right: 8px;
+		top: 2px;
+		border-radius: 50px;
+	}
+}
+
+.number-field-error {
+	position: relative;
+	&::after {
+		position: absolute;
+		content: '*';
+		color: #dc3545;
+		font-size: 16px;
+		width: 16px;
+		height: 16px;
+		right: 8px;
+		top: 2px;
+		border-radius: 50px;
+	}
+}
+.doc-field-error{
+	position: absolute;
+	&::after{
+		position: absolute;
+		content: '*';
+		color: #dc3545;
+		font-size: 16px;
+		width: 16px;
+		height: 16px;
+		top: 2px;
+		border-radius: 50px;
+	}
+}

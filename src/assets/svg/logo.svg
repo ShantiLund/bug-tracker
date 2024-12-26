@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51" height="24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g class="color000 svgShape" transform="matrix(.46123 0 0 .46123 .79078 3.6891)" fill-rule="evenodd" data-name="Group 4">
+  <g class="color000 svgShape" data-name="Group 1">
+   <path class="color393939 svgShape" transform="translate(-46.562,-10.257)" d="m76.044 41.69h-5.631v-20.305l-6.762 18.315h-5.265l-6.516-18.228v20.218h-5.308v-31.433h7.289l7.649 21.376 7.88-21.376h6.659v31.433z" fill-rule="evenodd" data-name="Path 1"/>
+  </g>
+  <g class="color000 svgShape" data-name="Group 2">
+   <path class="color393939 svgShape" transform="translate(-35.386,-10.257)" d="m83.035 41.69h-5.911v-26.59h-10.551v-4.843h27.012v4.843h-10.55z" fill-rule="evenodd" data-name="Path 2"/>
+  </g>
+  <g class="color000 svgShape" data-name="Group 3">
+   <path class="color393939 svgShape" transform="translate(-25.184,-10.257)" d="m90.754 41.69h-5.913v-31.433h18.311v4.843h-12.4v8.276h10.409v4.806h-10.407v13.5z" fill-rule="evenodd" data-name="Path 3"/>
+  </g>
+ </g>
+ <g class="color000 svgShape" transform="matrix(.46123 0 0 .46123 .79078 .58223)" fill-rule="evenodd" data-name="Group 6">
+  <g class="color000 svgShape" transform="translate(60.715)" fill-rule="evenodd" data-name="Group 5">
+   <path class="color393939 svgShape" transform="translate(-78.792,-3.521)" d="m105.18 10.257h-7.616l8.14 14.556c1.566-2.264 2.913-4.4 4.051-6.376z" data-name="Path 4"/>
+   <path class="color393939 svgShape" transform="translate(-74.739,1.726)" d="m111.09 36.443h7.616l-9.39-16.791c-1.443 1.95-2.946 3.8-4.492 5.589z" data-name="Path 5"/>
+   <path class="color393939 svgShape" transform="translate(-85.52,-5.935)" d="m123.46 8.106a63.388 63.388 0 0 1-6.338 13.877c-1.16 1.973-2.506 4.094-4.077 6.334a121.54 121.54 0 0 1-27.523 27.692c10.609-6.444 20.82-14.029 29.505-24.147 1.541-1.794 3.042-3.648 4.479-5.611a95.059 95.059 0 0 0 11.309-20.316z" data-name="Path 6"/>
+  </g>
+ </g>
+</svg>

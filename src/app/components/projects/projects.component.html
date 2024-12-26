@@ -1,0 +1,33 @@
+<app-menu></app-menu>
+<div class="page-container">
+  <div class="button-list">
+    <button nz-button nzType="primary" type="submit" (click)="createProject()">Create</button>
+  </div>
+  <div class="card-container">
+    <div class="card-div">
+      <nz-card class="card" nzTitle="Card title" [nzExtra]="extraTemplate">
+        <p>Card content</p>
+        <p>Card content</p>
+        <p>Card content</p>
+      </nz-card>
+    </div>
+    <div class="card-div">
+      <nz-card class="card" nzTitle="Card title" [nzExtra]="extraTemplate">
+        <p>Card content</p>
+        <p>Card content</p>
+        <p>Card content</p>
+      </nz-card>
+    </div>
+    <div class="card-div">
+      <nz-card class="card" nzTitle="Card title" [nzExtra]="extraTemplate">
+        <p>Card content</p>
+        <p>Card content</p>
+        <p>Card content</p>
+      </nz-card>
+    </div>
+  </div>
+
+  <ng-template #extraTemplate>
+    <a>More</a>
+  </ng-template>
+</div>

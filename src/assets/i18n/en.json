@@ -1,0 +1,435 @@
+{
+  "validation": {
+    "createUserBasicInfo": {
+      "employee": {
+        "required": "Employee is required"
+      },
+      "email": {
+        "required": "Email is required",
+        "email": "Enter a valid email address"
+      },
+      "password": {
+        "required": "Password is required",
+        "minlength": "Min Characters: 6"
+      },
+      "confirm": {
+        "required": "Please confirm password",
+        "mustMatch": "Passwords do not match"
+      },
+      "loginName": {
+        "required": "Login Name is required"
+      },
+      "fullName": {
+        "required": "Full Name is required"
+      },
+      "contactNo": {
+        "pattern": "Contact Number is not valid"
+      }
+    },
+    "createUserSettings": {
+      "authType": {
+        "required": "Authentication Type is required"
+      },
+      "overdraftLimit": {
+        "required": "Overdraft Limit is required"
+      }
+    },
+    "login": {
+      "email": {
+        "required": "Email is required",
+        "email": "Enter a valid email address"
+      },
+      "password": {
+        "required": "Password is required",
+        "minlength": "Min Characters: 6"
+      },
+      "orgId": {
+        "required": "Organization is required"
+      }
+    },
+    "general": {
+      "name": {
+        "required": "Name is required",
+        "pattern": "Invalid Name"
+      },
+      "alias": {
+        "required": "Alias is required"
+      },
+      "status": {
+        "required": "Status is required"
+      }
+    },
+    "address": {
+      "type": {
+        "required": "Address Type is required"
+      },
+      "address": {
+        "required": "Address is required"
+      },
+      "city": {
+        "required": "City is required"
+      },
+      "province": {
+        "required": "Province is required"
+      },
+      "country": {
+        "required": "Country is required"
+      },
+      "zipCode": {
+        "required": "Zip code is required"
+      }
+    },
+    "account": {
+      "type": {
+        "required": "Type is required"
+      },
+      "status": {
+        "required": "Status is required"
+      },
+      "currency": {
+        "required": "Currency is required"
+      }
+    },
+    "customer": {
+      "relManager": {
+        "required": "Relationship Manager is required"
+      },
+      "acquisitionDetails": {
+        "pattern": "Invalid Acquisition Details"
+      },
+      "remarks": {}
+    },
+    "bankContactInfo": {
+      "firstName": {
+        "required": "Full Name is required",
+        "pattern": "Invalid Full Name"
+      },
+      "designation": {},
+      "secOrg": {
+        "required": "Organization Name is required"
+      }
+    },
+    "contactInfo": {
+      "salutation": {
+        "required": "Salutation is required"
+      },
+      "lastName": {
+        "required": "Last Name is required",
+        "pattern": "Invalid Last Name"
+      },
+      "occupation": {},
+      "ssn": {
+        "pattern": "Invalid SNN Number"
+      },
+      "firstName": {
+        "required": "First Name is required",
+        "pattern": "Invalid First Name"
+      },
+      "middleName": {},
+      "designation": {},
+      "ownPercent": {
+        "required": "Percentage is required",
+        "pattern": "Invalid Ownership Percentage"
+      },
+      "secOrg": {
+        "required": "Organization Name is required"
+      }
+    },
+    "internal-use": {
+      "complianceStatus": {
+        "required": "Status is required"
+      },
+      "fixIdentifier": {
+        "required": "Fix Identifier is required"
+      },
+      "collateralization": {
+        "required": "Collateralization is required"
+      },
+      "interAffiliation": {
+        "required": "inter Affiliate is required"
+      },
+      "entityLei": {
+        "required": "Entity LEI is required"
+      },
+      "clearingExceptions": {
+        "required": "Clearing Exception  is required"
+      },
+      "leiExpiryDate": {
+        "required": "LEI Expiry Date is required"
+      },
+      "remarks": {}
+    },
+    "corpProfile": {
+      "legalName": {
+        "required": "Legal Name is required",
+        "pattern": "Invalid Legal Name"
+      },
+      "traderName": {
+        "required": "Trader Name is required",
+        "pattern": "Invalid Trader Name"
+      },
+      "businessClass": {
+        "required": "Business Classification is required"
+      },
+      "orgStruct": {
+        "required": "Organization Structure is required"
+      },
+      "businessDesc": {},
+      "orgJurisdiction": {
+        "required": "Organizational Jurisdiction"
+      }
+    },
+    "corpOwner": {
+      "name": {
+        "required": "Name is required",
+        "pattern": "Invalid Name"
+      },
+      "legalName": {
+        "required": "Legal Name is required",
+        "pattern": "Invalid Legal Name"
+      },
+      "trade": {
+        "required": "Trade is required",
+        "pattern": "Invalid Trade "
+      },
+      "dateOfIncorporation": {
+        "required": "Date of Incorporation is required"
+      },
+      "percentage": {
+        "required": "Percentage is required",
+        "pattern": "Invalid Percentage"
+      }
+    },
+    "createGroup": {
+      "name": {
+        "required": "Group Name is required"
+      }
+    },
+    "kyc-renew": {
+      "remarks": {}
+    },
+    "ind-profile": {
+      "remarks": {},
+      "employeeName": {
+        "pattern": "Invalid Employee Name"
+      }
+    },
+    "query-manager": {
+      "name": {
+        "required": "Query Name is required",
+        "pattern": "Invalid Query Name"
+      },
+      "query": {
+        "required": "Query is required"
+      }
+    },
+    "business-rule": {
+      "rule": {
+        "required": " Rule Name is required",
+        "pattern": "Invalid Rule Name"
+      },
+      "errorType": {
+        "required": "Error Type is required",
+        "pattern": "Invalid Error Type"
+      },
+      "module": {
+        "required": "Module Name is required"
+      }
+    },
+    "holidaySetup": {
+      "year": {
+        "required": "Year is required"
+      },
+      "countryIdEncrypted": {
+        "required": "Country is required"
+      }
+    },
+    "system-condition": {
+      "module": {
+        "required": "Module Name is required"
+      },
+      "name": {
+        "required": "Name is required",
+        "pattern": "Invalid Name"
+      },
+      "operator": {
+        "required": "Operator is required"
+      },
+      "description": {
+        "required": "Description is required"
+      }
+    },
+    "wire-template-beneficiary": {
+      "entityId": {
+        "required": "Entity is required"
+      },
+      "typeId": {
+        "required": "Type is required"
+      },
+      "currencyId": {
+        "required": "Currency is required"
+      },
+      "name": {
+        "required": "Name is required"
+      },
+      "address1": {
+        "required": "Address1 is required"
+      },
+      "city": {
+        "required": "City is required"
+      },
+      "countryId": {
+        "required": "Country is required"
+      },
+      "beneDob": {
+        "required": "Date of Birth is required"
+      },
+      "routingType": {
+        "required": "Routing Type is required"
+      },
+      "bankAddress1": {
+        "required": "Address is required"
+      },
+      "bankCity": {
+        "required": "City is required"
+      },
+      "idExpire": {
+        "required": "Expiry Date is required"
+      },
+      "dob": {
+        "required": "Date of Birth is required"
+      },
+      "dateTime": {
+        "required": "Date/Time is required"
+      },
+      "emailAddress": {
+        "pattern": "Enter a valid Email"
+      },
+      "accountNo": {
+        "restricted": "Enter Valid Account Number"
+      },
+      "contactPhoneNumber": {
+        "pattern": "Enter a Valid Number"
+      }
+    },
+    "wire-template-bank": {
+      "routingType": {
+        "required": "Routing Type is required"
+      },
+      "address": {
+        "required": "Address is required"
+      },
+      "city": {
+        "required": "City is required"
+      },
+      "bankName": {
+        "restricted": "Invalid Bank Name"
+      }
+    },
+    "wire-template-byOrder": {
+      "idExpire": {
+        "required": "Expiry Date is required"
+      },
+      "dob": {
+        "required": "Date of Birth is required"
+      }
+    },
+    "wire-template-verification": {
+      "dateTime": {
+        "required": "Date/Time is required"
+      }
+    },
+    "spread-template": {
+      "name": {
+        "required": "Name is required",
+        "pattern": "Invalid Name"
+      },
+      "spreadType": {
+        "required": "Spread Type is required"
+      },
+      "description": {
+        "required": "Description is required"
+      }
+    },
+    "currency-pair": {
+      "name": {
+        "required": "Name is required",
+        "pattern": "Invalid Name"
+      },
+      "description": {}
+    },
+    "entity-spread": {
+      "online": {
+        "required": "Online Quotation Mode is required"
+      },
+      "offline": {
+        "required": "Offline Quotation Mode is required"
+      },
+      "currency-template": {
+        "required": " Currency Pair Template is required!"
+      }
+    },
+    "flex-fields": {
+      "name": {
+        "required": "Name is required",
+        "pattern": "Invalid Name"
+      },
+      "type": {
+        "required": "Flex Field Type is required"
+      },
+      "module": {
+        "required": "Module is required"
+      },
+      "sortOrder": {
+        "required": "Field Sort Order is required"
+      }
+    },
+    "org-approval": {
+      "org": {
+        "required": "Organization is required"
+      },
+      "level": {
+        "required": "Approval Level is required"
+      },
+      "module": {
+        "required": "Module is required"
+      }
+    },
+    "group-approval": {
+      "group": {
+        "required": "Organization is required"
+      },
+      "approvalType": {
+        "required": "Approval Type is required"
+      }
+    },
+    "user-approval": {
+      "user": {
+        "required": "User is required"
+      },
+      "approvalType": {
+        "required": "Approval Type is required"
+      }
+    },
+    "dealing": {
+      "dealType": {
+        "required": "Deal Type is required"
+      },
+      "client": {
+        "required": "Client is required"
+      },
+      "trader": {
+        "required": "Trader is required"
+      },
+      "booker": {
+        "required": "Booker is required"
+      },
+      "entryDate": {
+        "required": "Entry Date is required"
+      },
+      "valueDate": {
+        "required": "Value Date is required"
+      }
+    }
+  }
+}

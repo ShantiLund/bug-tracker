@@ -1,0 +1,21 @@
+
+.modal-actions {
+	display: flex;
+	justify-content: end;
+	gap: 12px;
+
+	&.modal-actions-balanced {
+		button {
+			min-width: 120px;
+		}
+	}
+
+	&.actions-spaced-between {
+		justify-content: space-between;
+
+		&>div {
+			display: flex;
+			gap: 12px;
+		}
+	}
+}

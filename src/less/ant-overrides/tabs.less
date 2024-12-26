@@ -1,0 +1,75 @@
+.ant-tabs-card.ant-tabs-small>.ant-tabs-nav .ant-tabs-tab {
+	padding: 3px 3px;
+}
+
+.ant-tabs-tab-remove {
+	font-size: 14px;
+}
+
+.ant-tabs-card>.ant-tabs-nav .ant-tabs-tab:hover,
+.ant-tabs-card>div>.ant-tabs-nav .ant-tabs-tab:hover {
+	background-color: #f5f5f5;
+}
+
+.ant-tabs-card>.ant-tabs-nav .ant-tabs-tab-active,
+.ant-tabs-card>div>.ant-tabs-nav .ant-tabs-tab-active {
+	background-color: #f89522;
+	color: white;
+
+	&:hover {
+		background-color: #cb6f06;
+	}
+
+	.ant-tabs-tab-remove {
+		color: rgb(255 255 255);
+	}
+
+	.ant-tabs-tab-btn {
+		color: white;
+	}
+
+	.ant-spin {
+		color: white;
+	}
+}
+
+.ant-tabs-top>.ant-tabs-nav::before,
+.ant-tabs-bottom>.ant-tabs-nav::before,
+.ant-tabs-top>div>.ant-tabs-nav::before,
+.ant-tabs-bottom>div>.ant-tabs-nav::before {
+	border-bottom-color: #e0e0e0;
+}
+
+.ant-tabs-card.ant-tabs-top>.ant-tabs-nav .ant-tabs-tab-active,
+.ant-tabs-card.ant-tabs-top>div>.ant-tabs-nav .ant-tabs-tab-active {
+	border-bottom-color: #f89522;
+}
+
+.ant-tabs-left>.ant-tabs-content-holder>.ant-tabs-content>.ant-tabs-tabpane,
+.ant-tabs-left>div>.ant-tabs-content-holder>.ant-tabs-content>.ant-tabs-tabpane {
+	padding-left: 10px;
+}
+
+.container-centered {
+
+	.ant-tabs-card>.ant-tabs-nav .ant-tabs-tab,
+	.ant-tabs-card>div>.ant-tabs-nav .ant-tabs-tab {
+		.ant-tabs-tab-btn {
+			width: 200px;
+		}
+	}
+}
+
+.ant-tabs-card>.ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-card>div>.ant-tabs-nav .ant-tabs-tab {
+	transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+	.ant-tabs-tab-btn {
+		transition: all 0.1s;
+
+	}
+}
+
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-more, .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-more {
+	display: none;
+}
