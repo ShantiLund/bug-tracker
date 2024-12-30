@@ -1,0 +1,26 @@
+<div class="page-container">
+  <div class="page-container-header">
+    <h3 class="simple-heading-2">Project Tasks</h3>
+    <button nz-button nzType="primary" type="submit" (click)="createNewBug()">Create Bug</button>
+  </div>
+  <nz-table #filterTable [nzData]="listOfData" nzTableLayout="fixed" [nzLoading]="isLoading" [nzScroll]="{ x: 'max-content' }" [nzWidthConfig]="['200px', '200px', '200px', '200px', '200px', '200px', '200px', '200px', '200px', '200px', '200px']">
+    <thead>
+      <tr>
+        @for (column of listOfColumns; track column) {
+        <th [nzSortOrder]="column.sortOrder" [nzSortFn]="column.sortFn" [nzSortDirections]="column.sortDirections" [nzFilterMultiple]="column.filterMultiple" [nzFilters]="column.listOfFilter" [nzFilterFn]="column.filterFn">
+          {{ column.name }}
+        </th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @for (data of filterTable.data; track data) {
+      <tr>
+        <td>{{ data.name }}</td>
+        <td>{{ data.age }}</td>
+        <td>{{ data.address }}</td>
+      </tr>
+      }
+    </tbody>
+  </nz-table>
+</div>

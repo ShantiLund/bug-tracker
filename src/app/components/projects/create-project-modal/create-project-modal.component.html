@@ -6,6 +6,18 @@
         <input nz-input name="city" formControlName="name" placeholder="Enter Project Name" />
       </nz-form-control>
     </nz-form-item>
+    <nz-form-item>
+      <nz-form-label>
+        <nz-form-label nzRequired>Select Users</nz-form-label>
+      </nz-form-label>
+      <nz-form-control>
+        <nz-select class="w-100" nzMode="multiple" [nzPlaceHolder]="'Select Assigne'">
+          <nz-option [nzLabel]="'Assigne'" [nzValue]="'Assigne'"></nz-option>
+          <nz-option [nzLabel]="'Assigne 1'" [nzValue]="'Assigne 1'"></nz-option>
+          <nz-option [nzLabel]="'Assigne 2'" [nzValue]="'Assigne 2'"></nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
   </form>
 </div>
 

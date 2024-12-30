@@ -1,33 +1,90 @@
-<app-menu></app-menu>
 <div class="page-container">
-  <div class="button-list">
+  <div class="page-container-header">
+    <h3 class="main-heading">Projects</h3>
     <button nz-button nzType="primary" type="submit" (click)="createProject()">Create</button>
+  </div>
+
+  <div class="card-container">
+    <div class="card-div">
+      <nz-card class="card" nzTitle="Card title" [nzExtra]="extraTemplate">
+        <div class="content">
+          <p>BUgs</p>
+          <p>2</p>
+        </div>
+        <div class="content">
+          <p>Tasks</p>
+          <p> 1</p>
+        </div>
+      </nz-card>
+    </div>
+    <div class="card-div">
+      <nz-card class="card" nzTitle="Card title" [nzExtra]="extraTemplate">
+        <div class="content">
+          <p>BUgs</p>
+          <p>2</p>
+        </div>
+        <div class="content">
+          <p>Tasks</p>
+          <p> 1</p>
+        </div>
+      </nz-card>
+    </div>
+    <div class="card-div">
+      <nz-card class="card" nzTitle="Card title" [nzExtra]="extraTemplate">
+        <div class="content">
+          <p>BUgs</p>
+          <p>2</p>
+        </div>
+        <div class="content">
+          <p>Tasks</p>
+          <p> 1</p>
+        </div>
+      </nz-card>
+    </div>
   </div>
   <div class="card-container">
     <div class="card-div">
       <nz-card class="card" nzTitle="Card title" [nzExtra]="extraTemplate">
-        <p>Card content</p>
-        <p>Card content</p>
-        <p>Card content</p>
+        <div class="content">
+          <p>BUgs</p>
+          <p>2</p>
+        </div>
+        <div class="content">
+          <p>Tasks</p>
+          <p> 1</p>
+        </div>
       </nz-card>
     </div>
     <div class="card-div">
       <nz-card class="card" nzTitle="Card title" [nzExtra]="extraTemplate">
-        <p>Card content</p>
-        <p>Card content</p>
-        <p>Card content</p>
+        <div class="content">
+          <p>BUgs</p>
+          <p>2</p>
+        </div>
+        <div class="content">
+          <p>Tasks</p>
+          <p> 1</p>
+        </div>
       </nz-card>
     </div>
     <div class="card-div">
       <nz-card class="card" nzTitle="Card title" [nzExtra]="extraTemplate">
-        <p>Card content</p>
-        <p>Card content</p>
-        <p>Card content</p>
+        <div class="content">
+          <p>BUgs</p>
+          <p>2</p>
+        </div>
+        <div class="content">
+          <p>Tasks</p>
+          <p> 1</p>
+        </div>
       </nz-card>
     </div>
-  </div>
 
+  </div>
   <ng-template #extraTemplate>
-    <a>More</a>
+    <a nz-dropdown nzTrigger="click" (click)="createCategory()">
+      Create Category
+      <nz-icon nzType=" down" />
+    </a>
   </ng-template>
 </div>
