@@ -1,0 +1,27 @@
+<div class="page-container">
+  <div class="login-container">
+    <div class="mtfx-logo">
+      <i nz-icon nzType="svg:mtfx"></i>
+      <h3>Bug Tracker</h3>
+    </div>
+    <form nz-form class="login-form" [formGroup]="loginForm" (ngSubmit)="submit()">
+      <nz-form-item>
+        <nz-form-control [nzAutoTips]="'email' | validationMessage: 'login'">
+          <input type="text" nz-input formControlName="email" placeholder="Enter Email" autocomplete="username" />
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control [nzAutoTips]="'password' | validationMessage: 'login'">
+          <nz-input-group [nzSuffix]="visibilityBtn">
+            <input [type]="(isVisible) ? 'text' : 'password'" nz-input formControlName="password" placeholder="Enter Password" autocomplete="current-password" />
+          </nz-input-group>
+          <ng-template #visibilityBtn>
+            <i nz-icon [nzType]="(isVisible) ? 'eye' : 'eye-invisible'" (click)="isVisible = !isVisible"></i>
+          </ng-template>
+        </nz-form-control>
+      </nz-form-item>
+
+      <button nz-button nzType="primary" nzBlock [nzLoading]="loading.submit" type="submit" mat-button>Login</button>
+    </form>
+  </div>
+</div>

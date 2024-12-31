@@ -3,6 +3,27 @@
     <h3 class="simple-heading-2">Project Tasks</h3>
     <button nz-button nzType="primary" type="submit" (click)="createNewBug()">Create Bug</button>
   </div>
+  <form nz-form>
+    <div class="fx-container-row">
+
+      <nz-form-item class=" fx-basis-400">
+        <nz-form-label>Search Text</nz-form-label>
+        <nz-form-control>
+          <nz-input-group nzAddOnAfterIcon="search">
+            <input type="text" nz-input placeholder="Enter Search Text " />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item class=" fx-basis-400">
+        <nz-form-label>Search By ID</nz-form-label>
+        <nz-form-control>
+          <nz-input-group nzAddOnAfterIcon="search">
+            <input type="text" nz-input placeholder="Enter ID " />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </form>
   <nz-table #filterTable [nzData]="listOfData" nzTableLayout="fixed" [nzLoading]="isLoading" [nzScroll]="{ x: 'max-content' }" [nzWidthConfig]="['200px', '200px', '200px', '200px', '200px', '200px', '200px', '200px', '200px', '200px', '200px']">
     <thead>
       <tr>

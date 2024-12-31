@@ -6,9 +6,12 @@ import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { TasksDetailComponent } from './tasks-detail/tasks-detail.component';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-tasks',
-  imports: [NzTableModule, NzModalModule, NzButtonModule, NzSpinModule],
+  imports: [NzTableModule, NzModalModule, NzFormModule, ReactiveFormsModule, NzInputModule, NzButtonModule, NzSpinModule],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.less'
 })
