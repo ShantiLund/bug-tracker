@@ -1,4 +1,4 @@
-import { ApplicationConfig, inject, provideAppInitializer } from '@angular/core';
+import { ApplicationConfig, inject, provideAppInitializer, isDevMode } from '@angular/core';
 import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { HttpClient, provideHttpClient, withInterceptors } from '@angular/common/http';
@@ -9,6 +9,7 @@ import { errorInterceptor } from './core/interceptors/error.interceptor';
 import { EnvServiceProvider } from './core/services/env.service';
 import { firstValueFrom, take, tap, finalize, catchError, throwError } from 'rxjs';
 import { ValidationMessagesProps, updateValidationMessages } from './core/repos/validation-messages.repository';
+import { provideServiceWorker } from '@angular/service-worker';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -20,7 +21,10 @@ export const appConfig: ApplicationConfig = {
       const initializerFn = (initializeApp)(inject(HttpClient));
       return initializerFn();
     }),
-    provideHttpClient(withInterceptors([authInterceptor, errorInterceptor])),
+    provideHttpClient(withInterceptors([authInterceptor, errorInterceptor])), provideServiceWorker('ngsw-worker.js', {
+            enabled: !isDevMode(),
+            registrationStrategy: 'registerWhenStable:30000'
+          }),
 
   ]
 };
