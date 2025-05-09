@@ -43,4 +43,8 @@ export class AuthService {
 
     clearRequestsResult();
   }
+
+  getAllUsers() {
+    return this.http.get(API.Users.users).pipe(map(res => res.data));
+  }
 }

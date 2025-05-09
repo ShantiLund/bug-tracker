@@ -9,7 +9,7 @@ export class ValidationMessagePipe implements PipeTransform {
 
   transform(control: string, formKeyName: string): any {
     const validationMessages = validationMessageQ()?.[formKeyName]?.[control];
-    console.log(validationMessageQ(), validationMessages);
+    // console.log(validationMessageQ(), validationMessages);
     if (!validationMessages) {
       console.warn(`Validation messages not found for ${control} in ${formKeyName}`)
       return { default: {} };

@@ -7,14 +7,18 @@
       </nz-form-control>
     </nz-form-item>
     <nz-form-item>
-      <nz-form-label>
-        <nz-form-label nzRequired>Select Users</nz-form-label>
-      </nz-form-label>
+      <nz-form-label nzRequired>Description</nz-form-label>
+      <nz-form-control nzErrorTip="Description is required.">
+        <input nz-input name="description" formControlName="description" placeholder="Enter Project Name" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzRequired>Select Users</nz-form-label>
       <nz-form-control>
-        <nz-select class="w-100" nzMode="multiple" [nzPlaceHolder]="'Select Assigne'">
-          <nz-option [nzLabel]="'Assigne'" [nzValue]="'Assigne'"></nz-option>
-          <nz-option [nzLabel]="'Assigne 1'" [nzValue]="'Assigne 1'"></nz-option>
-          <nz-option [nzLabel]="'Assigne 2'" [nzValue]="'Assigne 2'"></nz-option>
+        <nz-select class="w-100" nzMode="multiple" [nzPlaceHolder]="'Select Assigne'" formControlName="users">
+          @for (item of users; track $index) {
+          <nz-option [nzLabel]="item.fullName" [nzValue]="item._id"></nz-option>
+          }
         </nz-select>
       </nz-form-control>
     </nz-form-item>
@@ -23,5 +27,5 @@
 
 <div *nzModalFooter>
   <button nz-button (click)="cancel()">Cancel</button>
-  <button nz-button nzType="primary" type="submit"> Save</button>
+  <button nz-button nzType="primary" type="submit" (click)="submit()"> Save</button>
 </div>

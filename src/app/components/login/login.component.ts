@@ -42,7 +42,7 @@ export class LoginComponent {
   loginForm = new FormGroup({
     email: new FormControl('', { nonNullable: true, validators: [Validators.required, Validators.email] }),
     password: new FormControl('', { nonNullable: true, validators: [Validators.required] }),
-    secOrgId: new FormControl({ value: 3, disabled: true }, { nonNullable: true }),
+    role: new FormControl({ value: "admin", disabled: true }, { nonNullable: true }),
   });
 
   async ngOnInit() {

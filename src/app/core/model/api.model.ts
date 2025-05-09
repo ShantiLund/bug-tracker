@@ -16,5 +16,5 @@ export interface HttpResponse {
 export interface LoginReqBody {
 	email: string;
 	password: string;
-	secOrgId: number;
+	role: string;
 }

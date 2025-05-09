@@ -1,7 +1,7 @@
 (function (window) {
   window.__env = {
     ...(window.__env || {}),
-    apiUrl: "http://3.96.248.242:105/api",
+    apiUrl: " http://localhost:3000/api",
     logLevel: 1,
     reqLogging: false,
     idleTimer: 6000,

@@ -1,6 +1,6 @@
 export class EnvService {
   constructor() { }
-  apiUrl = 'http://3.96.248.242:91/api';
+  apiUrl = ' http://localhost:3000/api';
   logLevel = 3;
   reqLogging = false;
   maxFileSize = 5 * 1024 * 1024; // (mb -> kb -> b);
